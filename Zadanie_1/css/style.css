@@ -1,0 +1,79 @@
+/* Zadanie 1 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+h1 {
+    font-size: 50px;
+}
+h4 {
+    font-size: 30px;
+}
+
+/* Zadanie 2 */
+* {
+    box-sizing: border-box;
+}
+
+/* Zadanie 3 */
+header {
+    position: sticky;
+    width: 100%;
+    background-color: lightgray;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    box-shadow: 0 0 10px 2px #aaa;
+    padding: 20px 120px;
+    z-index: 100;
+}
+
+/* Zadanie 4 */
+header {
+    gap: 300px
+}
+header ul li {
+    list-style: none;
+    display: inline-block;
+    align-items: end;
+    justify-content: flex-end;
+}
+header ul li a {
+    text-decoration: none;
+}
+header ul li:nth-child(1) a {
+    color: green;
+}
+
+/* Zadanie 6 */
+article, section {
+    display: block;
+    padding: 0 120px 0 120px;
+    font-size: 20px;
+}
+
+/* Zadanie 7 */
+article {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 120px
+}
+
+/* Zadanie 8 */
+.article-element {
+    width: 50%;
+}
+
+/* Zadanie 9 */
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
