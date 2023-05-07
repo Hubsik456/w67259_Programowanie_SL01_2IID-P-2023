@@ -1,0 +1,16 @@
+form {
+    background-color: rgb(209, 209, 209);
+    outline: rgb(88, 88, 88) 1px solid;
+    padding: 15px;
+    width: 40%;
+    margin: auto;
+}
+form input,form select {
+    width: 99%;
+}
+form input[type="radio"], form input[type="checkbox"] {
+    width: initial;
+}
+div.Error {
+    font-size: large;
+}
