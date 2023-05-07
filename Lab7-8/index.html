@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 7-8</title>
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <h1>Lab 7-8</h1>
+
+            <form>
+                <label for="Imie">Imię: </label>
+                <input type="text" id="Imie" oninput="Walidacja_Tekst(this, 3)" required>
+                <div class="Error"></div> <br>
+
+                <label for="Nazwisko">Nazwisko: </label>
+                <input type="text" id="Nazwisko" oninput="Walidacja_Tekst(this, 3)" required>
+                <div class="Error"></div> <br>
+
+                <label for="Email">E-mail: </label>
+                <input type="text" id="Email" required oninput="Walidacja_Email(this)">
+                <div class="Error"></div> <br>
+
+                <label for="Haslo">Hasło: </label>
+                <input type="password" id="Haslo" minlength="1" required oninput="Walidacja_Haslo(this, 3)">
+                <div class="Error"></div> <br>
+
+                <label for="Haslo_Powt">Powtórz Hasło: </label>
+                <input type="password" id="Haslo_Powt" minlength="1" required oninput="Walidacja_PowtHaslo(this)">
+                <div class="Error"></div> <br>
+
+                <label>Płeć: </label> <br>
+                <input type="radio" name="Plec" value="M" checked>M <br>
+                <input type="radio" name="Plec" value="K">K <br>
+                <div class="Error"></div> <br>
+
+                <label for="Telefon">Telefon: </label>
+                <!-- <input type="number" id="Telefon" required oninput="Walidacja_Telefon(this)"> -->
+                <input type="text" id="Telefon" required oninput="Walidacja_Telefon(this)">
+                <div class="Error"></div> <br>
+
+                <label for="Data_Urodzenia">Data Urodzenia: </label>
+                <input type="date" id="Data_Urodzenia" required onchange="Walidacja_Wiek(this)">
+                <div class="Error"></div> <br>
+
+                <label for="Kraj">Kraj: </label>
+                <select id="Kraj" onchange="Zadanie_7(this)">
+                    <option value="BRAK" selected disabled>...</option>
+                    <option value="Polska">Polska</option>
+                    <option value="USA">USA</option>
+                </select>
+                <div class="Error"></div> <br>
+
+                <label for="Wojewodztwo">Województwo: </label>
+                <div id="Zadanie_7">
+                    <input type="text" id="Wojewodztwo" disabled oninput="Walidacja_Wojewodztwo(this)">
+                </div>
+                <div class="Error"></div> <br>
+
+                <label id="Adres_Zamieszkania_Label" for="Adres_Zamieszkania">Adres Zamieszkania: </label>
+                <input type="text" id="Adres_Zamieszkania" disabled>
+                <div class="Error"></div> <br>
+
+                <input type="checkbox" id="CzyKorespondecyjnyTakiSam" checked onchange="Obsluga_Checkboxa_AdrKo(this)">
+                <label id="CzyKorespondecyjnyTakiSam_Label" for="CzyKorespondecyjnyTakiSam">Czy Adres Korespondecyjny Jest Taki Sam Jak Adres Zamieszkania </label>
+                <div class="Error"></div> <br>
+
+                <label id="Adres_Korespondencyjny_Label" for="Adres_Korespondencyjny">Adres Korespondecyjny: </label>
+                <input type="text" id="Adres_Korespondencyjny" disabled hidden>
+                <div class="Error"></div> <br>
+
+                <!-- <input type="submit" onclick="Zadanie_2()"> -->
+                <input type="submit">
+            </form>
+    </body>
+</html>
