@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 9</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <h1>Lab 9</h1>
+
+        <!-- Zadanie 1 -->
+        <button class="Zad_1" onclick="Zadanie_1(this)">1</button>
+        <button class="Zad_1" onclick="Zadanie_1(this)">2</button>
+        <button class="Zad_1" onclick="Zadanie_1(this)">3</button>
+    
+        <hr>
+
+        <!-- Zadanie 2 -->
+        <form>
+            <label for="Imie">Imię: </label>
+            <input type="text" id="Imie" oninput="Walidacja_Tekst(this)"> <br>
+
+            <label for="Nazwisko">Nazwisko: </label>
+            <input type="text" id="Nazwisko" oninput="Walidacja_Tekst(this)"> <br>
+
+            <label for="Email">E-mail: </label>
+            <input type="email" id="Email" oninput="Walidacja_Email(this)"> <br>
+
+            <label for="Haslo">Hasło: </label>
+            <input type="password" id="Haslo" oninput="Walidacja_Haslo(this)"> <br>
+
+            <label for="Haslo_Powt">Powtórz Hasło: </label>
+            <input type="password" id="Haslo_Powt" oninput="Walidacja_HasloPowt(this)"> <br>
+
+            <input type="submit">
+        </form>
+
+        <hr>
+
+        <!-- Zadanie 4 -->
+        <label for="Z4_Imie">Imię: </label>
+        <input type="text" id="Z4_Imie"> <br>
+
+        <label for="Z4_Nazwisko">Nazwisko: </label>
+        <input type="text" id="Z4_Nazwisko"> <br>
+
+        <button onclick="Zadanie_4()">Zadanie 4</button>
+
+        <table id="Z4_Tabela" border="1">
+            <tr> <th>Imie</th> <th>Nazwisko</th> </tr>
+
+        </table>
+
+
+    </body>
+</html>
